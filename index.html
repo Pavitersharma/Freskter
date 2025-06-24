@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,55 +25,71 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
   </head>
-  <body class="container mx-auto">
+  <body class="container mx-auto md:container">
     
-    <header class="flex items-center justify-between py-6 px-4">
-      <!-- <h1 class="text-5xl font-bold font-playfair">
-        FRES<span class="text-blue-500">KTER</span>
-      </h1> -->
-      <img src="./assets/images/Logo-removebg-preview.png" width="250" height="100" alt="">
-      <nav class="gap-5 flex text-lg font-inter">
-        <a href="#">Houses</a>
-        <a href="#">Workspaces</a>
-        <a href="#">Blogs</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <hr class="border-gray-700 mb-6" />
+<header class="flex items-center justify-between py-6 px-4 flex-wrap md:flex-nowrap   font-inter">
+  
+  <img src="./assets/images/Logo-removebg-preview.png" width="200" alt="Freskter Logo" class="mb-4 md:mb-0">
+
+  
+  <button id="menu-toggle" class="md:hidden block text-3xl text-black focus:outline-none">
+    &#9776;
+  </button>
+
+ 
+  <nav id="menu" class="w-full md:w-auto md:flex gap-6 text-lg hidden md:flex flex-col md:flex-row mt-4 md:mt-0">
+    <a href="#" class="block py-2 md:py-0 hover:text-[#00ADB5] transition">Houses</a>
+    <a href="#" class="block py-2 md:py-0 hover:text-[#00ADB5] transition">Workspaces</a>
+    <a href="#" class="block py-2 md:py-0 hover:text-[#00ADB5] transition">Blogs</a>
+    <a href="#" class="block py-2 md:py-0 hover:text-[#00ADB5] transition">About</a>
+    <a href="#" class="block py-2 md:py-0 hover:text-[#00ADB5] transition">Contact</a>
+  </nav>
+</header>
+
+    <hr class="border-gray-300 mb-6" />
 
     
-    <section>
+   <section>
       <div class="image_slider w-full overflow-hidden">
         <div><img src="./assets/images/Hero2.jpg" alt="Hero 1"  class="w-full h-50 object-fill rounded"/></div>
         <div><img src="./assets/images/Hero1.jpg" alt="Hero 2"   class="w-full h-50 object-fill rounded"  /></div>
         <div><img src="./assets/images/Hero3.jpg" alt="Hero 3"   class="w-full h-50 object-fill rounded" /></div>
         <div><img src="./assets/images/Hero2.jpg" alt="Hero 4"  class="w-full h-50 object-cover rounded"  /></div>
       </div>
-    </section> <hr class="border-gray-700 mb-2" />
-
-    <section>
-
-
-      <div class="grid grid-cols-2 gap-4 mt-10">
-       <div class="section_content mt-4">
-         <h2 class="text-3xl mt-4"> Bespoke Home Design</h2>
-        <p class="text-lg mt-4">At Freskter, we create homes that balance timeless elegance with personal expression. Our residential projects—ranging from cosy villas to farmhouses—embody refined craftsmanship and thoughtful detailing tailored to your lifestyle and setting.</p>
-        <p class="text-lg mt-4">
-          Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs encourage collaboration, innovation, and productivity. By blending form and function, we build environments that reflect your brand and meet your team’s needs.
-
-
-        </p>
-
-        <button class="bg-black px-6 py-5 rounded-xl mt-5 text-white">Contact</button>
-       </div>
-       <div>
-        <img src="./assets/images/section3.png" alt="" class="h-80 w-full object-cover rounded">
-       </div>
-      </div>
     </section>
 
-  <hr class="border-gray-700  mt-4" />
+<hr class="border-gray-300 mb-6" />
+
+
+  <section class="px-4 py-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    
+    
+    <div class="space-y-4">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-playfair">Bespoke Home Design</h2>
+      <p class="text-base sm:text-lg text-gray-700">
+        At Freskter, we create homes that balance timeless elegance with personal expression.
+        Our residential projects—ranging from cosy villas to farmhouses—embody refined craftsmanship
+        and thoughtful detailing tailored to your lifestyle and setting.
+      </p>
+      <p class="text-base sm:text-lg text-gray-700">
+        Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs encourage collaboration,
+        innovation, and productivity. By blending form and function, we build environments that reflect your brand
+        and meet your team’s needs.
+      </p>
+      <button class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-xl mt-4">Contact</button>
+    </div>
+
+   
+    <div>
+      <img src="./assets/images/section3.png" alt="Section Image"
+        class="w-full h-64 sm:h-80 md:h-[22rem] object-cover rounded" />
+    </div>
+    
+  </div>
+</section>
+
+  <hr class="border-gray-300  mt-4" />
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
@@ -170,298 +186,480 @@
 </section>
 
 
- <section>
+<section class="px-4 py-10 bg-[#EEEEEE] font-inter">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Text Content -->
+    <div class="section_content mt-4">
+      <h2 class="text-3xl mt-4 font-playfair text-[#222831]">Bespoke Home Design</h2>
+      
+      <p class="text-lg mt-4 text-[#393E46]">
+        At Freskter, we create homes that balance timeless elegance with personal expression. Our residential projects—ranging from cosy villas to farmhouses—embody refined craftsmanship and thoughtful detailing tailored to your lifestyle and setting.
+      </p>
+      
+      <p class="text-lg mt-4 text-[#393E46]">
+        Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs encourage collaboration, innovation, and productivity. By blending form and function, we build environments that reflect your brand and meet your team’s needs.
+      </p>
+      
+      <button class="bg-[#00ADB5] hover:bg-[#009fa6] text-white px-6 py-3 rounded-full mt-6 transition">
+        Contact
+      </button>
+    </div>
 
+    <!-- Video 1 -->
+    <div class="w-full h-[300px] md:h-[400px] lg:h-[500px]">
+      <iframe 
+        class="w-full h-full rounded-lg shadow-md"
+        src="https://www.youtube.com/embed/FEgss2CkHds?si=e5eVYNtWCDbzyaaj"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-      <div class="grid grid-cols-3 gap-5 mt-10">
-       <div class="section_content mt-4">
-         <h2 class="text-3xl mt-4"> Bespoke Home Design</h2>
-        <p class="text-lg mt-4">At Freskter, we create homes that balance timeless elegance with personal expression. Our residential projects—ranging from cosy villas to farmhouses—embody refined craftsmanship and thoughtful detailing tailored to your lifestyle and setting.</p>
-        <p class="text-lg mt-4">
-          Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs encourage collaboration, innovation, and productivity. By blending form and function, we build environments that reflect your brand and meet your team’s needs.
+    <!-- Video 2 -->
+    <div class="w-full h-[300px] md:h-[400px] lg:h-[500px]">
+      <iframe 
+        class="w-full h-full rounded-lg shadow-md"
+        src="https://www.youtube.com/embed/JblrN5oNse4?si=V8tO_4fA2aJr6euv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-
-        </p>
-
-        <button class="bg-black px-6 py-5 rounded rounded-[45%] mt-5 text-white">Contact</button>
-       </div>
-       <div>
-        <iframe width="470" height="500" src="https://www.youtube.com/embed/FEgss2CkHds?si=e5eVYNtWCDbzyaaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-       </div>
-       <div>
-        <iframe width="470" height="500" src="https://www.youtube.com/embed/JblrN5oNse4?si=V8tO_4fA2aJr6euv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       </div>
-      </div>
-    </section>
-
-
-    <hr class="border-gray-700  mt-4" />
-
-
-
-
-<section class="text-gray-600 body-font mt-10">
-
-  <div class="flex items-center justify-between">
-    <h2 class="text-4xl ml-5">Publications <br>
-Print & Digital </h2>
-<div >
-  <p class="text-xl">Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs .</p>
-<p class="text-xl"> By blending form and function, we build environments that reflect your brand and meet your team’s needs.</p>
-</div>
   </div>
-  <div class="container px-5 py-24 mx-auto">
-  <h2 class="text-xl mb-6">Publications</h2>
-  <div class="flex flex-wrap -m-4">
-    <div class="p-4 md:w-1/3">
-      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-        <img class="lg:h-72 md:h-48 h-48 w-full object-cover object-center" src="./assets/images/Hero2.jpg" alt="blog">
-      </div>
-    </div>
-    <div class="p-4 md:w-1/3">
-      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-        <img class="lg:h-72 md:h-48 h-48 w-full object-cover object-center" src="./assets/images/Hero3.jpg" alt="blog">
-      </div>
-    </div>
-    <div class="p-4 md:w-1/3">
-      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-        <img class="lg:h-72 md:h-48 h-48 w-full object-cover object-center" src="./assets/images/Hero2.jpg" alt="blog">
-      </div>
-    </div>
-  </div>
-</div>
-
- 
 </section>
 
 
-<hr class="border-gray-700  mt-4" />
 
-<section class="text-gray-600 body-font mt-10">
+    <hr class="border-gray-300  mt-4" />
 
-  <div class="flex items-center justify-between">
-    <h2 class="text-4xl ml-5">Publications <br>
-Print & Digital </h2>
-<div >
-  <p class="text-xl">Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs .</p>
-<p class="text-xl"> By blending form and function, we build environments that reflect your brand and meet your team’s needs.</p>
-</div>
-  </div>
-  <div class="container px-5 py-24 mx-auto">
-  
-      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-        <img class="lg:h-80 md:h-48 h-48 w-full object-cover object-center" src="./assets/images/Hero2.jpg" alt="blog">
-      </div>
-   
+
+
+
+<section class="text-[#393E46] body-font mt-10 font-inter bg-[#EEEEEE] py-16 px-4">
+  <!-- Header Area -->
+  <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-start justify-between gap-8">
+    
+    <!-- Left Title -->
+    <div class="flex-1">
+      <h2 class="text-4xl font-playfair text-[#222831] leading-tight mb-4">
+        Publications <br />
+        <span class="text-[#00ADB5]">Print & Digital</span>
+      </h2>
+    </div>
+    
+    <!-- Right Description -->
+    <div class="flex-1 text-lg text-[#393E46] space-y-2">
+      <p>Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs.</p>
+      <p>By blending form and function, we build environments that reflect your brand and meet your team’s needs.</p>
     </div>
   </div>
-</div>
 
- 
+  <!-- Grid Content -->
+  <div class="container mx-auto mt-16">
+    <h3 class="text-2xl font-playfair mb-6 text-[#222831]">Publications</h3>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Image Card 1 -->
+      <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+        <img class="w-full h-64 object-cover" src="./assets/images/Hero2.jpg" alt="Publication 1" />
+      </div>
+
+      <!-- Image Card 2 -->
+      <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+        <img class="w-full h-64 object-cover" src="./assets/images/Hero3.jpg" alt="Publication 2" />
+      </div>
+
+      <!-- Image Card 3 -->
+      <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+        <img class="w-full h-64 object-cover" src="./assets/images/Hero2.jpg" alt="Publication 3" />
+      </div>
+    </div>
+  </div>
 </section>
 
-<hr class="border-gray-700  mt-4" />
-
-<section>
 
 
-      <div class="grid grid-cols-4 gap-5 mt-10">
-       <div class="section_content mt-4">
-         <h2 class="text-3xl mt-4"> Rock 
-Modern House</h2>
-        <p class="text-lg mt-4">At Freskter, we create homes that balance timeless elegance with personal expression. Our residential projects—ranging from cosy villas to farmhouses—embody refined craftsmanship and thoughtful detailing tailored to your lifestyle and setting.</p>
-        <p class="text-lg mt-4">
-          Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs encourage collaboration, innovation, and productivity. By blending form and function, we build environments that reflect your brand and meet your team’s needs.
+<hr class="border-gray-300  mt-4" />
+
+<section class="text-[#393E46] body-font mt-10 font-inter bg-[#EEEEEE] py-16 px-4">
+  <!-- Top Title & Description -->
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start justify-between gap-8 mb-10">
+    
+    <div class="flex-1">
+      <h2 class="text-4xl font-playfair text-[#222831] leading-tight mb-4">
+        Publications <br />
+        <span class="text-[#00ADB5]">Print & Digital</span>
+      </h2>
+    </div>
+    
+    <div class="flex-1 text-lg space-y-2">
+      <p>Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs.</p>
+      <p>By blending form and function, we build environments that reflect your brand and meet your team’s needs.</p>
+    </div>
+  </div>
+
+  <!-- Single Image -->
+  <div class="max-w-5xl mx-auto">
+    <div class="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+      <img class="w-full h-64 md:h-96 object-cover" src="./assets/images/Hero2.jpg" alt="Publication" />
+    </div>
+  </div>
+</section>
 
 
-        </p>
+<hr class="border-gray-300  mt-4" />
 
-        <button class="bg-black px-6 py-5 rounded rounded-[45%] mt-5 text-white">Contact</button>
-       </div>
-       <div>
-        <iframe width="350" height="500" src="https://www.youtube.com/embed/FEgss2CkHds?si=e5eVYNtWCDbzyaaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-       </div>
-       <div>
-        <iframe width="350" height="500" src="https://www.youtube.com/embed/JblrN5oNse4?si=V8tO_4fA2aJr6euv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       </div>
-       <div>
-        <iframe width="350" height="500" src="https://www.youtube.com/embed/JblrN5oNse4?si=V8tO_4fA2aJr6euv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       </div>
+<section class="mt-16 px-4 font-inter text-[#393E46] bg-[#EEEEEE] py-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
+    
+    <!-- Text Content -->
+    <div class="lg:col-span-1">
+      <h2 class="text-4xl font-playfair text-[#222831] mb-4">Rock <br />Modern House</h2>
+      <p class="text-base mb-4">
+        At Freskter, we create homes that balance timeless elegance with personal expression. Our residential projects—ranging from cosy villas to farmhouses—embody refined craftsmanship and thoughtful detailing tailored to your lifestyle and setting.
+      </p>
+      <p class="text-base mb-6">
+        Whether it's a corporate office or a co-working hub, our purpose-driven workspace designs encourage collaboration, innovation, and productivity. By blending form and function, we build environments that reflect your brand and meet your team’s needs.
+      </p>
+      <button class="bg-[#222831] text-white px-6 py-3 rounded-full hover:bg-[#00ADB5] transition">
+        Contact
+      </button>
+    </div>
+
+    <!-- Videos -->
+    <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="w-full aspect-video">
+        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/FEgss2CkHds?si=e5eVYNtWCDbzyaaj" frameborder="0" allowfullscreen></iframe>
       </div>
-    </section>
-
-<section>
-
-
-      <div class="grid grid-cols-3 gap-5 mt-10">
-     
-      <div>
-<img class=" " src="https://dummyimage.com/600x360" alt="">
+      <div class="w-full aspect-video">
+        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/JblrN5oNse4?si=V8tO_4fA2aJr6euv" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div>
-<img class=" " src="https://dummyimage.com/600x360" alt="">
+      <div class="w-full aspect-video">
+        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/JblrN5oNse4?si=V8tO_4fA2aJr6euv" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div>
-<img class=" " src="https://dummyimage.com/600x360" alt="">
-      </div>
-      </div>
-    </section>
+    </div>
 
-<hr class="border-gray-700  mt-4" />
-
-    <section>
-      <img src="https://dummyimage.com/600x360"  class="w-full h-100 mt-10">
-    </section>
+  </div>
+</section>
 
 
-
-
-    <section>
-
-
-      <div class="grid grid-cols-3 gap-5 mt-10">
-     
-      <div>
-<img class=" " src="https://dummyimage.com/600x360" alt="">
-      </div>
-      <div>
-<img class=" " src="https://dummyimage.com/600x360" alt="">
-      </div>
-      <div>
-<img class=" " src="https://dummyimage.com/600x360" alt="">
-      </div>
-      </div>
-    </section>
-
-
-
-
-    <section class="px-6 py-16 bg-white">
-  <div class="grid md:grid-cols-2 gap-10 items-start">
-    <!-- Text Section -->
+<section class="py-16 px-4 bg-[#EEEEEE] font-inter">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
     <div>
-      <h2 class="text-4xl font-playfair font-semibold mb-4 leading-snug">Euphoria<br>Modern Bunglow</h2>
-      <p class="text-lg text-gray-600 mb-1">Meerut, UP</p>
-      <p class="text-lg text-gray-600 mb-4">Architecture | Interior Design</p>
+      <img
+        class="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 hover:scale-105"
+        src="https://dummyimage.com/600x360"
+        alt="Project Image 1"
+      />
+    </div>
 
-      <p class="text-md font-semibold text-black mb-2">Status - Civil Ongoing</p>
-      <p class="text-gray-700 leading-relaxed text-[17px]">
-        This house is a euphoria-inspired ultra-modern house with huge overhanging roofs and seamless views that creates a tranquil and luxurious living space that blends nature with contemporary aesthetics.
+    <div>
+      <img
+        class="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 hover:scale-105"
+        src="https://dummyimage.com/600x360"
+        alt="Project Image 2"
+      />
+    </div>
+
+    <div>
+      <img
+        class="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 hover:scale-105"
+        src="https://dummyimage.com/600x360"
+        alt="Project Image 3"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+<hr class="border-gray-300  mt-4" />
+
+<section class="mt-10">
+  <img 
+    src="https://dummyimage.com/1200x600" 
+    alt="Freskter Featured Image"
+    class="w-full h-auto max-h-[600px] object-cover rounded-lg shadow-md"
+  />
+</section>
+
+
+
+
+<section class="mt-10 px-4 md:px-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+    <div>
+      <img 
+        class="w-full h-auto object-cover rounded-lg shadow-md" 
+        src="https://dummyimage.com/600x360" 
+        alt="Gallery Image 1"
+      />
+    </div>
+
+    <div>
+      <img 
+        class="w-full h-auto object-cover rounded-lg shadow-md" 
+        src="https://dummyimage.com/600x360" 
+        alt="Gallery Image 2"
+      />
+    </div>
+
+    <div>
+      <img 
+        class="w-full h-auto object-cover rounded-lg shadow-md" 
+        src="https://dummyimage.com/600x360" 
+        alt="Gallery Image 3"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="px-6 py-16 bg-white">
+  <div class="grid md:grid-cols-2 gap-12 items-start">
+
+    <!-- Text Content -->
+    <div>
+      <h2 class="text-4xl font-playfair font-semibold mb-4 leading-snug text-[var(--color-primary)]">
+        Euphoria<br>Modern Bungalow
+      </h2>
+      <p class="text-lg text-gray-600 font-inter mb-1">Meerut, UP</p>
+      <p class="text-lg text-gray-600 font-inter mb-4">Architecture | Interior Design</p>
+
+      <p class="text-md font-semibold text-black mb-2 font-inter">Status - Civil Ongoing</p>
+      <p class="text-gray-700 leading-relaxed text-[17px] font-inter">
+        This house is a euphoria-inspired ultra-modern house with huge overhanging roofs and seamless views that create a tranquil and luxurious living space, blending nature with contemporary aesthetics.
       </p>
     </div>
 
-    <!-- Videos Section -->
+    <!-- Videos -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/JblrN5oNse4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="w-full h-64 rounded overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/JblrN5oNse4"
+          title="Euphoria Video 1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
 
-      <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/FEgss2CkHds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="w-full h-64 rounded overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/FEgss2CkHds"
+          title="Euphoria Video 2"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
+
   </div>
 </section>
 
 
+
 <section class="px-6 py-16 bg-white text-gray-800 font-inter">
+  <!-- Heading and Contact Info -->
   <div class="grid md:grid-cols-2 gap-12 items-start">
-    <!-- Left Section: Title and Description -->
+    <!-- Description -->
     <div>
       <h2 class="text-4xl font-playfair font-semibold mb-4">Distinctive Houses</h2>
       <p class="text-lg text-gray-600 mb-2">Classical & Modern Style</p>
       <p class="text-lg text-gray-600 mb-4">Residential Architecture & Interior Design</p>
-
-      <p class="text-gray-700 leading-relaxed">
-        House is an extension of the personal self and is an immediate reflection of your lifestyle.
-        Architecture, interior design and decor depict the most intrinsic part of who you are. House design
-        plays a very unique and an essential role in all our lifestyles and well-being. As leading residential
-        architects & Interior designers in Noida, Chaukor studio has a diverse portfolio of Farmhouses,
-        Independent houses, Penthouses & Uniquely crafted weekend homes.
+      <p class="text-gray-700 leading-relaxed text-[16px]">
+        A house is an extension of the personal self and a reflection of your lifestyle. Architecture, interior design, and decor depict the most intrinsic parts of who you are. Chaukor Studio offers a diverse portfolio of farmhouses, independent houses, penthouses, and uniquely crafted weekend homes across Noida.
       </p>
     </div>
 
-    <!-- Right Section: Contact Info -->
+    <!-- Contact Info -->
     <div>
       <h3 class="text-xl font-semibold mb-2">Reach Us</h3>
-      <p class="text-md">Phone - +91-9654373534</p>
-      <p class="text-md mb-4">Email - mail@chaukorstudio.com</p>
+      <p class="text-md mb-1">📞 Phone: <a href="tel:+919654373534" class="underline">+91-9654373534</a></p>
+      <p class="text-md mb-4">📧 Email: <a href="mailto:mail@chaukorstudio.com" class="underline">mail@chaukorstudio.com</a></p>
 
       <h4 class="text-lg font-semibold">Noida Office</h4>
-      <p class="text-md">Ground Floor, C-15<br>
-      Sector 65, Noida<br>
-      Uttar Pradesh - 201301</p>
-    </div>
-  </div>
-
-  <!-- Cards Section -->
-  <div class="grid md:grid-cols-3 gap-8 mt-16">
-    <!-- Card 1 -->
-    <div>
-      <img src="https://via.placeholder.com/400x400.png?text=Atulyam" alt="Atulyam" class="rounded w-full h-80 object-cover mb-4">
-      <h3 class="text-xl font-semibold mb-2">Atulyam</h3>
-      <p class="text-gray-700 text-[15px] leading-relaxed">
-        The design of the house creates harmonious blend of timeless elegance and distinctive charm.
-        From the intricate moldings and graceful arches to the expansive landscape, each element is
-        carefully curated to exude an aura of incomparable beauty and sophistication.
-      </p>
-    </div>
-
-    <!-- Card 2 -->
-    <div>
-      <img src="https://via.placeholder.com/400x400.png?text=Minaret" alt="Minaret" class="rounded w-full h-80 object-cover mb-4">
-      <h3 class="text-xl font-semibold mb-2">Minaret</h3>
-      <p class="text-gray-700 text-[15px] leading-relaxed">
-        The Minaret house is designed to capture and reinterpret the traditional elements to create
-        a distinctive identity rooted in culture and traditions. The planning of the minaret house is
-        guided by the social patterns governing the way the family interacts and co-exists in the client's cultural context.
-      </p>
-    </div>
-
-    <!-- Card 3 -->
-    <div>
-      <img src="https://via.placeholder.com/400x400.png?text=Ethereal" alt="Ethereal" class="rounded w-full h-80 object-cover mb-4">
-      <h3 class="text-xl font-semibold mb-2">Ethereal</h3>
-      <p class="text-gray-700 text-[15px] leading-relaxed">
-        Bathed in soft, luminous hues, the residence radiates a celestial charm,
-        while wrought iron railings and sculpted balustrades add to its stately presence.
-        A true masterpiece of architectural grace, Ethereal captivates with its grandeur and refined splendor.
+      <p class="text-md leading-relaxed">
+        Ground Floor, C-15<br>
+        Sector 65, Noida<br>
+        Uttar Pradesh - 201301
       </p>
     </div>
   </div>
-  <div class="grid md:grid-cols-3 gap-8 mt-16">
-    <!-- Card 1 -->
-    <div>
-      <img src="https://via.placeholder.com/400x400.png?text=Atulyam" alt="Atulyam" class="rounded w-full h-80 object-cover mb-4">
-      <h3 class="text-xl font-semibold mb-2">Atulyam</h3>
-      <p class="text-gray-700 text-[15px] leading-relaxed">
-        The design of the house creates harmonious blend of timeless elegance and distinctive charm.
-        From the intricate moldings and graceful arches to the expansive landscape, each element is
-        carefully curated to exude an aura of incomparable beauty and sophistication.
-      </p>
+
+  <!-- Project Grid -->
+  <div class="mt-16 grid md:grid-cols-3 gap-10">
+    <!-- Card Template -->
+    <div class="bg-white rounded shadow hover:shadow-xl transition-all duration-300">
+      <img src="https://via.placeholder.com/400x400.png?text=Atulyam" alt="Atulyam" class="rounded-t w-full h-72 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Atulyam</h3>
+        <p class="text-gray-700 text-[15px] leading-relaxed">
+          A harmonious blend of timeless elegance and distinctive charm, with intricate moldings, graceful arches, and expansive landscaping curated to exude refined beauty and sophistication.
+        </p>
+      </div>
     </div>
 
-    <!-- Card 2 -->
-    <div>
-      <img src="https://via.placeholder.com/400x400.png?text=Minaret" alt="Minaret" class="rounded w-full h-80 object-cover mb-4">
-      <h3 class="text-xl font-semibold mb-2">Minaret</h3>
-      <p class="text-gray-700 text-[15px] leading-relaxed">
-        The Minaret house is designed to capture and reinterpret the traditional elements to create
-        a distinctive identity rooted in culture and traditions. The planning of the minaret house is
-        guided by the social patterns governing the way the family interacts and co-exists in the client's cultural context.
-      </p>
+    <div class="bg-white rounded shadow hover:shadow-xl transition-all duration-300">
+      <img src="https://via.placeholder.com/400x400.png?text=Minaret" alt="Minaret" class="rounded-t w-full h-72 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Minaret</h3>
+        <p class="text-gray-700 text-[15px] leading-relaxed">
+          A reinterpretation of traditional elements rooted in cultural identity. The planning is shaped by the client’s social structure, encouraging meaningful coexistence.
+        </p>
+      </div>
     </div>
 
-    <!-- Card 3 -->
-    <div>
-      <img src="https://via.placeholder.com/400x400.png?text=Ethereal" alt="Ethereal" class="rounded w-full h-80 object-cover mb-4">
-      <h3 class="text-xl font-semibold mb-2">Ethereal</h3>
-      <p class="text-gray-700 text-[15px] leading-relaxed">
-        Bathed in soft, luminous hues, the residence radiates a celestial charm,
-        while wrought iron railings and sculpted balustrades add to its stately presence.
-        A true masterpiece of architectural grace, Ethereal captivates with its grandeur and refined splendor.
-      </p>
+    <div class="bg-white rounded shadow hover:shadow-xl transition-all duration-300">
+      <img src="https://via.placeholder.com/400x400.png?text=Ethereal" alt="Ethereal" class="rounded-t w-full h-72 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Ethereal</h3>
+        <p class="text-gray-700 text-[15px] leading-relaxed">
+          Radiating celestial charm with luminous hues and sculpted balustrades, this architectural masterpiece exudes grandeur and timeless grace.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+<section class="px-6 py-12 max-w-5xl mx-auto text-gray-800 font-inter w-full">
+  <!-- Introduction -->
+  <div class="mb-10">
+    <h2 class="text-3xl font-playfair font-semibold mb-4">Chaukor Studio</h2>
+    <p class="text-lg leading-relaxed text-gray-700">
+      We are an award-winning and a <span class="underline font-medium">leading architecture and interior design firm</span> in Noida, Delhi, Ghaziabad & Greater Noida.
+      Our team of architects and interior designers is committed to delivering high-quality projects and innovative design solutions.
+    </p>
+    <p class="text-md text-gray-600 mt-2">
+      Architects & Interior Designers in Noida | Delhi | Ghaziabad | Greater Noida
+    </p>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="flex flex-wrap gap-4 mb-8 text-lg font-semibold">
+    <a href="#" class="hover:underline text-[#00ADB5]">Houses</a>
+    <span>|</span>
+    <a href="#" class="hover:underline text-[#00ADB5]">Workspaces</a>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="bg-[#EEEEEE] p-6 rounded-lg shadow-lg border max-w-3xl w-full mx-auto">
+    <h3 class="text-3xl font-playfair mb-2 text-[#222831]">Contact</h3>
+    <p class="text-md text-[#393E46] mb-6">Project Enquiries & Design Consultations</p>
+
+    <form class="space-y-5 font-inter">
+      <div>
+        <label class="block text-sm font-medium text-[#393E46] mb-1" for="name">Name <span class="text-red-500 text-xs">(required)</span></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required class="w-full border border-[#ccc] px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-[#00ADB5]" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-[#393E46] mb-1" for="phone">Phone Number <span class="text-red-500 text-xs">(required)</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +91 9876543210" autocomplete="tel" required class="w-full border border-[#ccc] px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-[#00ADB5]" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-[#393E46] mb-1" for="plot-size">Plot Size (Sqm) <span class="text-red-500 text-xs">(required)</span></label>
+        <input type="text" id="plot-size" name="plot-size" placeholder="e.g. 250" required class="w-full border border-[#ccc] px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-[#00ADB5]" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-[#393E46] mb-1" for="location">Location (City) <span class="text-red-500 text-xs">(required)</span></label>
+        <input type="text" id="location" name="location" placeholder="e.g. Noida" required class="w-full border border-[#ccc] px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-[#00ADB5]" />
+      </div>
+
+      <div class="pt-2">
+        <button type="submit" class="bg-[#00ADB5] text-white px-6 py-2 rounded-full hover:bg-[#009aa2] transition-all">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+<footer class="bg-white px-6 py-12 text-gray-800 max-w-6xl mx-auto font-sans">
+
+  <!-- Social Media Icons -->
+  <div class="flex justify-center sm:justify-start gap-5 mb-8">
+    <a href="#"><img src="./assets/images/facebook_3128304.png" class="h-6 w-6" alt="Facebook" /></a>
+    <a href="#"><img src="./assets/images/instagram-logo_4103007.png" class="h-6 w-6" alt="Instagram" /></a>
+    <a href="#"><img src="./assets/images/link_15047553.png" class="h-6 w-6" alt="LinkedIn" /></a>
+    <a href="#"><img src="./assets/images/youtube.png" class="h-6 w-6" alt="YouTube" /></a>
+  </div>
+
+  <!-- Contact & Address Grid -->
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-10 text-sm">
+    
+    <div>
+      <p class="font-semibold mb-1">Reach Us</p>
+      <p>Phone: <a href="tel:+7082063269" class="hover:underline">+91 7082063269</a></p>
+      <p>Email: <a href="mailto:badalkumar32192@gmail.com" class="text-blue-600 hover:underline">badalkumar32192@gmail.com</a></p>
+    </div>
+
+    <div>
+      <p class="font-semibold mb-1">Noida Office</p>
+      <p>Ground Floor, C-15</p>
+      <p>Sector 65, Noida</p>
+      <p>Uttar Pradesh - 201301</p>
+    </div>
+
+    <div>
+      <p class="font-semibold mb-1">Domain Expertise</p>
+      <p>Architecture & Unique Elevation Designs</p>
+      <p>Home Interior for Villas & Bungalows</p>
+    </div>
+  </div>
+
+  <!-- Cities -->
+  <div class="text-sm font-medium flex flex-wrap gap-3 mb-8 text-gray-700">
+    <a href="#" class="hover:underline">Noida</a>
+    <span>|</span>
+    <a href="#" class="hover:underline">Ghaziabad</a>
+    <span>|</span>
+    <a href="#" class="hover:underline">Delhi</a>
+    <span>|</span>
+    <a href="#" class="hover:underline">Greater Noida</a>
+    <span>|</span>
+    <a href="#" class="hover:underline">Gurgaon</a>
+  </div>
+
+  <!-- Call to Action Button -->
+  <div class="flex justify-center sm:justify-start mb-8">
+    <a href="tel:+919654373534" class="bg-gray-800 text-white px-6 py-3 rounded-full shadow hover:bg-black transition-all">
+      Call Us (+91 7082063269)
+    </a>
+  </div>
+
+  <!-- Bottom Info -->
+  <div class="text-xs text-gray-600 text-center sm:text-left">
+    
+    <p class="mt-1">&copy; 2025 Freskter. All rights reserved.</p>
+  </div>
+
+</foot
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script

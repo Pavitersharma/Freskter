@@ -1,20 +1,33 @@
+ @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+
+:root {
+  --color-primary: #222831;
+  --color-secondary: #393E46;
+}
+
+
 .font-inter {
-      font-family: 'Inter', sans-serif;
-    }
-    .font-playfair {
-      font-family: 'Playfair Display', serif;
-    }
- 
-    .slick-dots li button:before {
-      color: white;
-    }
-    .slick-prev:before,
-    .slick-next:before {
-      color: white;
-      font-size: 30px;
-    }
+  font-family: 'Inter', sans-serif;
+}
 
-    .section_content{
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
 
-      word-wrap: break-word;
-    }
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  font-size: 30px;
+}
+
+.section_content {
+  word-wrap: break-word;
+}
